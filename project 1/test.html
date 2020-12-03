@@ -2,50 +2,22 @@
 <html lang = "en">
 <head>
 	<meta charset = "UTF-8">
-	<link rel="stylesheet" type="text/css" href="css3/firstpage.css">
-	<link rel="icon" type="image/png" href="fire.png"/>
-	<title>My first page</title>
-	<script src="https://kit.fontawesome.com/7a66d09e64.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="css3/test.css">
+	<script src="JS/test.js"></script>
 </head>
 <body>
-	<header>Welcome to my page<br><nav><a href="https://www.google.com" alt="Google">Google</a>&nbsp;<a href="https://www.facebook.com" alt="Facebook">Facebook</a></nav></header><hr>
-	<main>This website is a test for html
-		<br><hr>
-		<blockquote>"All who do a thing shall be thing doers" <cite>Micheal Finck</cite></blockquote><hr>
 
-		<figure><img src = "me.jpg" width="15%" alt="A picture of me"><figcaption>A photo of me</figcaption></figure><br><hr>
 
-		<h1>Favorite books</h1>
-		<ul><li>a butt</li><li>peanut butter</li><li>some kind of sandwich</li></ul><hr>
+	<header id="bg">Welcome to my page<br><nav><a href="https://www.google.com" alt="Google">Google</a>&nbsp;<a href="https://www.facebook.com" alt="Facebook">Facebook</a></nav><br>
+		<button type="button" onclick="backgroundcolor()">Change color</button>
+		<button type="button" onclick="originalcolor()">Change back</button><hr>
+	</header>
 
-		<h1>Achievements</h1>
-		<label for="excellence">Total excellence: 50%</label>
-		<progress id="excellence" value="5" max="10">Excellence</progress><br>
-		<label for="smart">Total smartness: 75%</label>
-		<progress id="smart" value="75" max="100">Smartness</progress><br>
-		<label for="butt">Also a butt: 12%</label>
-		<progress id="butt" value="12" max="100">Butt</progress><br><br>
-		<hr>
-
-		<details><summary>Have a peek under the hood</summary>Not very exciting is it?</details><hr>
-
-		<i class="far fa-angry fa-3x"></i><br><hr>
-
-		<video src="sailor-song.mp4" width="400" controls> Your browser does not support this video</video><br><hr>
-
-		The Blatz<br>
-		<audio src="blatz.mp3" controls>The Blatz</audio><br><hr>
-
-		<table border="1">
-			<caption>Chores</caption>
-			<tr><th>Employee</th><th>Task</th></tr>
-			<tr><td rowspan="2">Micheal</td><td>Dishes</td></tr>
-			<tr><td>Garbages</td></tr>
-			<tr><td>Valerie</td><td>Sweep</td></tr>
-			<tr><td>Cameron</td><td>Mop</td></tr>
-		</table>
-		<hr>
+	<main>
+		<div class="viewer" id="viewport">This is where we view products</div><br>
+			<figure><img class="firstthumb" src="images/gallery1.jpg" width="10%" alt="Square patterns" onmouseover="bigview(this)"></figure>
+			<figure><img src="images/gallery2.jpg" width="10%" alt="Square patterns" onmouseover="bigview(this)"></figure>
+			<figure><img src="images/gallery3.jpg" width="10%" alt="Square patterns" onmouseover="bigview(this)"></figure>
+			<figure><img src="images/gallery4.jpg" width="10%" alt="Square patterns" onmouseover="bigview(this)"></figure>
+			<figure><img src="images/gallery5.jpg" width="10%" alt="Square patterns" onmouseover="bigview(this)"></figure>
 	</main>
-	<footer>Copyright Micheal Finck<address>271 Dongan Lu Shanghai</address></footer>
-</body>
-</html>

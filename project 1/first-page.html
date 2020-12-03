@@ -3,14 +3,25 @@
 <head>
 	<meta charset = "UTF-8">
 	<link rel="stylesheet" type="text/css" href="css3/firstpage.css">
+	<script src="JS/javascript.js"></script>
 	<link rel="icon" type="image/png" href="fire.png"/>
 	<title>My first page</title>
 	<script src="https://kit.fontawesome.com/7a66d09e64.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<header>Welcome to my page<br><nav><a href="https://www.google.com" alt="Google">Google</a>&nbsp;<a href="https://www.facebook.com" alt="Facebook">Facebook</a></nav></header><hr>
+	<header id="bg">Welcome to my page<br><nav><a href="https://www.google.com" alt="Google">Google</a>&nbsp;<a href="https://www.facebook.com" alt="Facebook">Facebook</a></nav><br>
+		<button type="button" onclick="backgroundcolor()">Change color</button>
+		<button type="button" onclick="originalcolor()">Change back</button><hr>
+	</header>
 	<main>This website is a test for html
 		<br><hr>
+		<div class="viewer" id="viewport">This is where we view products</div><br>
+			<figure><img class="firstthumb" src="images/gallery1.jpg" width="10%" alt="Square patterns" onmouseover="bigview(this)"></figure>
+			<figure><img src="images/gallery2.jpg" width="10%" alt="Square patterns" onmouseover="bigview(this)"></figure>
+			<figure><img src="images/gallery3.jpg" width="10%" alt="Square patterns" onmouseover="bigview(this)"></figure>
+			<figure><img src="images/gallery4.jpg" width="10%" alt="Square patterns" onmouseover="bigview(this)"></figure>
+			<figure><img src="images/gallery5.jpg" width="10%" alt="Square patterns" onmouseover="bigview(this)"></figure>
+			<br><hr>
 		<blockquote>"All who do a thing shall be thing doers" <cite>Micheal Finck</cite></blockquote><hr>
 
 		<figure><img src = "me.jpg" width="15%" alt="A picture of me"><figcaption>A photo of me</figcaption></figure><br><hr>
