@@ -8,7 +8,7 @@
 	<title>My first page</title>
 	<script src="https://kit.fontawesome.com/7a66d09e64.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onload="loadOrders()">
 	<header id="bg">Welcome to my page<br><nav><a href="https://www.google.com" alt="Google">Google</a>&nbsp;<a href="https://www.facebook.com" alt="Facebook">Facebook</a></nav><br>
 		<button type="button" onclick="backgroundcolor()">Change color</button>
 		<button type="button" onclick="originalcolor()">Change back</button><hr>
@@ -16,11 +16,11 @@
 	<main>This website is a test for html
 		<br><hr>
 		<div class="viewer" id="viewport">This is where we view products</div><br>
-			<figure><img class="firstthumb" src="images/gallery1.jpg" width="10%" alt="Square patterns" onmouseover="bigview(this)"></figure>
-			<figure><img src="images/gallery2.jpg" width="10%" alt="Square patterns" onmouseover="bigview(this)"></figure>
-			<figure><img src="images/gallery3.jpg" width="10%" alt="Square patterns" onmouseover="bigview(this)"></figure>
-			<figure><img src="images/gallery4.jpg" width="10%" alt="Square patterns" onmouseover="bigview(this)"></figure>
-			<figure><img src="images/gallery5.jpg" width="10%" alt="Square patterns" onmouseover="bigview(this)"></figure>
+			<figure><img class="firstthumb" src="images/gallery1.jpg" width="10%" alt="Square patterns" onmouseover="bigview(this)" onmouseout="unDo()"></figure>
+			<figure><img src="images/gallery2.jpg" width="10%" alt="Square patterns" onmouseover="bigview(this)" onmouseout="unDo()"></figure>
+			<figure><img src="images/gallery3.jpg" width="10%" alt="Square patterns" onmouseover="bigview(this)" onmouseout="unDo()"></figure>
+			<figure><img src="images/gallery4.jpg" width="10%" alt="Square patterns" onmouseover="bigview(this)" onmouseout="unDo()"></figure>
+			<figure><img src="images/gallery5.jpg" width="10%" alt="Square patterns" onmouseover="bigview(this)" onmouseout="unDo()"></figure>
 			<br><hr>
 		<blockquote>"All who do a thing shall be thing doers" <cite>Micheal Finck</cite></blockquote><hr>
 
@@ -55,7 +55,21 @@
 			<tr><td>Valerie</td><td>Sweep</td></tr>
 			<tr><td>Cameron</td><td>Mop</td></tr>
 		</table>
-		<hr>
+		<hr><br>
+    <button onclick="myfunction()">Order List</button>
+    <p id="orders"></p><br><hr><br>
+		<form>
+			<label for="name">Name</label>
+			<input type="text" id="name" name:"name" required><br>
+			<label>Email:<input type="email" id="email1" name="email1" placeholder="me@me.com" required></label><br>
+			<label>Re-enter Email:<input type="email" id="email2" name="email2" placeholder="me@me.com" onchange="return check()" required></label><br>
+
+			<label for="birth">Birth</label>
+			<input type="date" id="birth" value:"birth"><br>
+			<input type="submit" value="Click Here" onclick="return check()">
+		</form>
+		<br><hr><br>
+
 	</main>
 	<footer>Copyright Micheal Finck<address>271 Dongan Lu Shanghai</address></footer>
 </body>
