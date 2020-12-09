@@ -38,3 +38,7 @@ figure{
 .firstthumb{
 	margin-left: 24vw;
 }
+
+#nick{
+	display: none;
+}

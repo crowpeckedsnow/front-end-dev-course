@@ -61,6 +61,12 @@
 		<form>
 			<label for="name">Name</label>
 			<input type="text" id="name" name:"name" required><br>
+			<label for"yesNick">Nickname?</label>
+			<input id="yesNick" name="yesNick" type="checkbox" value="unchecked" onchange="nicknameFunction()" onload="nicknameFunction()"><br>
+			<div id="nick">
+				<label for="nickname">Nickname:</label>
+				<input type="text" name="nickname" id="nickname"><br>
+			</div>
 			<label>Email:<input type="email" id="email1" name="email1" placeholder="me@me.com" required></label><br>
 			<label>Re-enter Email:<input type="email" id="email2" name="email2" placeholder="me@me.com" onchange="return check()" required></label><br>
 
